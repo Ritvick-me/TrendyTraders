@@ -1,0 +1,22 @@
+<div class="row justify-content-center">
+  <div *ngFor='let asset of assets' id="Plis">
+    <div class="card card-style {{asset.holder}}">
+      <span (load)="strikeThrough()">
+        <div class="card-body adjust but">
+          <h4 class="head1 text-center">{{asset.name}}</h4>
+          <h5 class="text-center price">{{asset.price}}<p class="per-year">/year</p></h5>
+          <ul class="list-collection">
+            <li class="card-text list">{{Content.c1}}</li>
+            <li class="card-text list">{{Content.c2}}</li>
+            <li class="card-text list strike" id="l1">{{Content.c3}}</li>
+            <li class="card-text list strike" id="l2">{{Content.c4}}</li>
+            <li class="card-text list strike" id="l3">{{Content.c5}}</li>
+            <li class="card-text list strike" id="l4">{{Content.c6}}</li>
+            <li class="card-text list strike" id="l5">{{Content.c7}}</li>
+          </ul>
+          <div class="container text-center buttu"><a href="#" class="btn btn-primary button-des">Buy Now</a></div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>

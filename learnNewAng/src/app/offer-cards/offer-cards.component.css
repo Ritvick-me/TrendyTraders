@@ -1,0 +1,29 @@
+.card-size{
+    width:23rem;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.debate{
+    font-family: 'open sans', "sans-serif";
+}
+
+.img-size{
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.title{
+    color: orange;
+    margin-bottom: 20px;
+    font-family: 'open sans', "sans-serif";
+}
+
+@media (max-width: 400px){
+    .card-size{
+        width: 18rem;
+    }
+}

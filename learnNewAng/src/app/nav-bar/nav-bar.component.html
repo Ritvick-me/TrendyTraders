@@ -1,0 +1,17 @@
+<!--<nav class="nav-design fixed-top">
+  <ul>
+    <li *ngFor='let link of links'><a href="{{link.address}}">{{link.name}}</a></li>
+  </ul>
+</nav>-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top nav-design" style="background-color: transparent;">
+  <button class="navbar-toggler nav-color" style="background-color:black;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active" *ngFor='let link of links'>
+        <a class="nav-link" href="{{link.address}}">{{link.name}}<span class="sr-only">(current)</span></a>
+    </ul>
+  </div>
+</nav>

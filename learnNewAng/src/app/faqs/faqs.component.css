@@ -1,0 +1,10 @@
+.question{
+    font-size: 30px;
+    color:rgb(255, 115, 0);
+    line-height: normal;
+    padding-bottom: 10px;
+}
+.answer{
+    font-size: 15px;
+    margin-bottom: 30px;
+}

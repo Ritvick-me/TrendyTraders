@@ -1,0 +1,135 @@
+<app-nav-bar></app-nav-bar>
+
+
+<div class="container-fluid fixed-top edit">
+    <div class="row justify-content-end text-right">
+        <div class="col col-auto">
+                <a class=" obj" href="/"><h2 class="text-right obj">TRENDY TRADERS</h2></a>
+        </div>
+        <div class="col col-auto text-center">
+            <a href="/"><img src="./assets/TT.png" style="width:70px; max-height: 48px; margin-top: 3px; margin-left: 2px;"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid bg">
+    <div class="container text-center">
+        <h2 class="pre-head">COME TRADE WITH US-</h2>
+        <h1 class="heading">TRENDY TRADERS</h1>
+        <h3 class="post-head">WRITE SOMETHING ABOUT THE BUSINESS...</h3>
+    </div>
+</div>
+
+<div class="container-fluid back1">
+    <div class="row justify-content-center">
+        <div class="col col-xl-4 d-none d-lg-block">
+            <img class="bull" src="./assets/Bull.png">
+        </div>
+        <div class="col col-sm-12 col-lg-4">
+            <h2 class="who-why text-center">Who are Trendy Traders?</h2>
+            <p class="text-center">We are a group of professional trainers(not S.E.B.I. registered) who are looking forward to make the people more financially independent
+                by training them through accurate, technical and the right techniques to trade in intraday to gain atleast 10% of their daily investment.
+            </p>
+            <br><br>
+            <h2 class="who-why text-center">Why Chose Us?</h2>
+            <ul class="container why-list">
+                <li>Accuracy of 98%</li>
+                <li>Regular Dount sessions</li>
+                <li>10-20% profits everyday</li>
+                <li>One-on-one live training</li>
+                <li>Lifetime membership</li>
+                <li>Live examples for strategies</li>
+            </ul>   
+        </div>
+        <div class="col col-xl-4 d-none d-lg-block text-right">
+            <img class="bear" src="./assets/Bear.png">
+        </div>
+    </div>    
+</div>
+
+<br><br>
+
+<div class="container-fluid bg-membership">
+    <div class="container text-center">
+            <h2 class="memberships">SERVICES WE OFFER</h2>
+            <p class="para-type">Our trainers are friendly and provide instant help.</p>
+    </div>
+    <div class="row justify-content-center">
+        <app-offer-cards [serviceHeading]="serviceHeading.name1" [iconList]="iconList.icon1" [serviceContent]="serviceContent.content1"></app-offer-cards>
+        <app-offer-cards [serviceHeading]="serviceHeading.name2" [iconList]="iconList.icon2" [serviceContent]="serviceContent.content2"></app-offer-cards>
+        <app-offer-cards [serviceHeading]="serviceHeading.name3" [iconList]="iconList.icon3" [serviceContent]="serviceContent.content3"></app-offer-cards>
+        <app-offer-cards [serviceHeading]="serviceHeading.name4" [iconList]="iconList.icon4" [serviceContent]="serviceContent.content4"></app-offer-cards>
+    </div>
+</div>
+
+
+
+<div class="container-fluid back1">
+    <div class="container text-center">
+        <h2 class="memberships" style="margin-bottom: 50px;">MEMBERSHIPS</h2>
+    </div>
+    <app-member-cards [Content]="Content"></app-member-cards>
+</div>
+
+<br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 text-center">
+            <h2 class="memberships"> Frequently Asked Questions </h2>
+            <br><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm-12 col-lg-6">
+            <app-faqs *ngFor="let ques of questions" [questions]="ques.q1" [answers]="ques.a1"></app-faqs>
+        </div>
+        <div class="col col-sm-12 col-lg-6">
+            <app-faqs *ngFor="let ques of questionsCol2" [questions]="ques.q1" [answers]="ques.a1"></app-faqs>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+<div class="container-fluid back1">
+    <div class="container memberships text-center">Contact Us</div>
+    <div class="row justify-content-center">
+        <app-contact-cards *ngFor="let contact of contacts" [serviceHeading]="contact.title" [iconList]="contact.icon"></app-contact-cards>
+    </div>
+    <br><br>
+    <div class="container footer-bg">
+        <h3>Contact Form</h3>
+        <br><br>
+        <div class="row justify-content-center">
+            <div class="col col-6">
+                <label for="exampleInputEmail1">First Name</label>
+                <input type="Name" class="form-control label-width" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+            </div>
+            <div class="col col-6">
+                <label for="exampleInputEmail1">Last Name</label>
+                <input type="Name" class="form-control label-width" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-12">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control label-width" id="inputEmail4" placeholder="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-12">
+                <label for="inputEmail4">Subject</label>
+                <input type="email" class="form-control label-width" id="inputEmail4" placeholder="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-12">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control label-width" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+        <button type="button" class="btn btn-light button-width">Submit</button>
+    </div>
+</div>

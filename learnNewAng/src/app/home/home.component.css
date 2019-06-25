@@ -1,0 +1,197 @@
+.back1{
+    background-color: #f7f8fa;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.bear{
+    width:30vw;
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-right: 0vw;
+}
+
+.bg{
+    background-image: url('src/assets/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg-membership{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bull{
+    width:32vw;
+    margin-top: 50px;
+    margin-left: -30px;
+}
+
+.button-width{
+    background-color: rgb(255, 115, 0);
+    color: white;
+    border-radius: 25px;
+    min-width: 100px;
+}
+
+.button-width:hover{
+    border-style:solid;
+    border-color: rgb(255, 115, 0);
+    background-color: white;
+    color: rgb(255, 115, 0);
+    transition-duration: 0.3s;
+}
+
+.edit{
+    position:aboslute;
+    margin-right: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    margin-top: 3px;
+    opacity:0.5;
+    width: 50%; 
+}
+
+.footer-bg{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.footer-bg h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 999;
+}
+
+.heading{
+    position: absolute;
+    margin-top: 40vh;
+    font-size: 850%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 115, 0);
+    font-weight: 999;
+    letter-spacing: 4px;
+    margin-left:-20px;
+    text-shadow: 2px 2px black;
+}
+
+.label-width{
+    width: 100% !important;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+.memberships{
+    font-size:400%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 999;
+    color: rgb(255, 115, 0);
+    text-transform: uppercase; 
+}
+
+.obj{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 999;
+}
+
+.obj:hover{
+    text-decoration: none;
+}
+
+.para-type{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+}
+
+.pre-head{
+    position: absolute;
+    margin-top:30vh;
+    font-size: 550%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 999;
+    margin-left: 8vh;
+    color: rgb(255, 115, 0);
+    text-shadow: 2px 2px black;
+}
+
+.post-head{
+    position: absolute;
+    margin-top: 58vh;
+    font-size: 250%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 999;
+    margin-left: 15vh;
+    color: rgb(255, 115, 0);
+    text-shadow: 2px 2px black;
+}
+
+.who-why{
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 999;
+    color: rgb(255, 115, 0);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.why-list{
+    margin-left: 20%;
+}
+
+@media (max-width:750px)
+{
+    .edit h2{
+        display:none;
+    }
+
+    .heading{
+        font-size: 350%;
+    }
+
+    .pre-head{
+        font-size: 200%;
+        margin-left: 10%;
+    }
+    .post-head{
+        font-size: 150%;
+        margin-left: 0vh;
+    }
+    .why-list{
+        width: 70vw;
+    }
+}
+
+@media (max-width:434px){
+    .pre-head{
+        font-size: 150%;   
+    }
+    .post-head{
+        margin-left: 0vh;
+        margin-top: 65vh;
+    }
+}
+
+@media (max-width:324px){
+    .pre-head{
+        font-size: 130%;
+        margin-left: 5%;   
+    }
+}
+
+@media (max-width:542px){
+    .post-head{
+        margin-top: 65vh;
+    }
+    .edit{
+        left:30vw;
+    }
+}
+@media (max-width:477px){
+    .memberships{
+        font-size: 200%;
+    }
+}
