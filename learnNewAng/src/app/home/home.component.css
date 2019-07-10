@@ -127,6 +127,7 @@
     margin-left: 15vh;
     color: rgb(255, 115, 0);
     text-shadow: 2px 2px black;
+    max-width: 90vw;
 }
 
 .who-why{
@@ -142,14 +143,45 @@
     margin-left: 20%;
 }
 
-@media (max-width:750px)
+@media (max-width:1355px){
+    .pre-head{
+        font-size:350%;
+        margin-left: 20%;
+    }
+    .heading{
+        font-size: 400%;
+        margin-left: 20%;
+    }
+    .post-head{
+        font-size: 200%;
+        margin-left: 18%;
+    }
+}
+
+@media (max-width:1095px){
+    .pre-head{
+        font-size:350%;
+        margin-left: 10%;
+    }
+    .heading{
+        font-size: 400%;
+        margin-left: 10%;
+    }
+    .post-head{
+        font-size: 200%;
+        margin-left: 8%;
+    }
+}
+
+@media (max-width:800px)
 {
     .edit h2{
         display:none;
     }
 
     .heading{
-        font-size: 350%;
+        font-size: 250%;
+        margin-left: 5%;
     }
 
     .pre-head{
@@ -170,8 +202,10 @@
         font-size: 150%;   
     }
     .post-head{
-        margin-left: 0vh;
         margin-top: 65vh;
+    }
+    .heading{
+        margin-left:1%;
     }
 }
 
@@ -196,71 +230,4 @@
     }
 }
 
-/*Navbar*/
 
-.nav-design{
-    background-image: linear-gradient(to right, black, black);   
-    opacity:0.5;
-}
-
-.nav-design.scrolled{
-    opacity:1;
-}
-
-.nav-design ul li{
-    float: left;
-    list-style-type: none;
-    font-size: 125%;
-    margin-top:10px;
-    
-}
-
-.nav-design div ul li a{
-    color:rgb(255, 255, 255);
-    padding-left:10px;
-    padding-right: 10px; 
-    text-decoration: none;
-    padding-top:10px;
-    padding-bottom: 10px; 
-    margin-top:-20px;
-    margin-bottom: -8px;
-    
-}
-
-.nav-design div ul li a:hover{
-    background-color: rgb(255, 72, 0);
-    transition-duration: 0.5s;
-}
-
-.nav-design img{
-    margin-top:-16px;
-    height:50px;
-    float:right;
-}
-
-@media (max-width:750px){
-    .nav-design{
-        background-image: linear-gradient(to right, transparent, transparent);   
-        opacity:0.5;
-    }
-    .bg-light{
-        background-color: transparent !important;
-    }
-    .nav-design div ul li a{
-        color:rgb(255, 255, 255);
-        padding-left:0px;
-        padding-right: 0px; 
-        text-decoration: none;
-        padding-top:0px;
-        padding-bottom: 0px; 
-        margin-top:0px;
-        margin-bottom: px;
-        
-    }
-    .nav-design div ul{
-        background-image: linear-gradient(to right, black, black);
-        padding-left:10px;
-        padding-bottom:20px;
-        width: 60vw;
-    }
-}

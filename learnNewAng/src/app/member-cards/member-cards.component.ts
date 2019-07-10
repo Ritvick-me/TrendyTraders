@@ -18,16 +18,16 @@ export class MemberCardsComponent implements OnInit {
   
   
   Pricing= {
-    price1:"$100",
-    price2:"$200",
-    price3:"$300"
+    price1:"₹3,999",
+    price2:"₹5,999",
+    price3:"₹6,999"
   };
 
 
   assets=[
-    {holder: "cream", name:"Fixway Membership", price:"$100"},
-    {holder: "uncream", name:"Prime Membership", price:"$200"},
-    {holder: "recream", name:"Elite Membership", price:"$300"}
+    {holder: "cream", name:"Fixway Membership", price:"₹3,999", link: "https://www.instamojo.com/@trendytraders/l16fda76d0c184cc0a186f00802f05678/"},
+    {holder: "uncream", name:"Prime Membership", price:"₹5,999", link: "https://www.instamojo.com/@trendytraders/l979ef58368394348981fe567136550c3/"},
+    {holder: "recream", name:"Elite Membership", price:"₹6,999", link: "https://www.instamojo.com/@trendytraders/l64ed634316674c4ca40b59f1c41d7816/"}
   ]
 
 
