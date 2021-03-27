@@ -1,3 +1,4 @@
+import * as $ from "jquery";
 import { Component, OnInit, Input } from '@angular/core';
 declare var $: any;
 
@@ -31,17 +32,14 @@ export class MemberCardsComponent implements OnInit {
   ]
 
 
-  strikeThrough(){
-    $(".uncream #l1, .uncream #l2, .uncream #l3").removeClass("strike");
-    $(".recream #l1, .recream #l2, .recream #l3, .recream #l4, .recream #l5").removeClass("strike");
-  };
+
 
   constructor() {}
 
   ngOnInit() {}
 
   ngAfterViewInit() {
-      this.strikeThrough();
+      
   }
 
 }
