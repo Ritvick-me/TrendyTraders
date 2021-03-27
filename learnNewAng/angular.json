@@ -142,5 +142,8 @@
       }
     }
   },
-  "defaultProject": "learnNewAng"
+  "defaultProject": "learnNewAng",
+  "cli": {
+    "analytics": "61edbd55-f3c6-41d4-8639-2d95c0b0a00d"
+  }
 }
